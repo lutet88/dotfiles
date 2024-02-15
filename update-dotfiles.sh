@@ -49,11 +49,21 @@ cd dotfiles
 cp -r config/* ~/.local/config/
 cp -r home/* ~/
 cp update-dotfiles.sh ~/.local/bin/
+cp merge-dotfiles.sh ~/.local/bin/
+chmod +x ~/.local/bin/update-dotfiles.sh
+chmod +x ~/.local/bin/merge-dotfiles.sh
 cd ..
 
 # install fzf
+echo
+echo installing fzf...
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+
+# move it
+echo
+echo moving fzf...
+mv ~/.fzf/bin/fzf ~/.local/bin
 
 # install micro plugins
 echo

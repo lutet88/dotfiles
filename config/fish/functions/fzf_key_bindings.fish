@@ -1,0 +1,1 @@
+/home/lutet/.fzf/shell/key-bindings.fish
