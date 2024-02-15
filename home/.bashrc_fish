@@ -1,0 +1,3 @@
+# .bashrc
+
+set PATH "$HOME/.local/bin:$HOME/bin:$HOME/.lc3:$PATH"
