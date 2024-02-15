@@ -12,7 +12,7 @@ cp -r .config/* ~/dotfiles/config/
 # git push
 cd ~/dotfiles
 git add *
-git commit -m "Update Dotfiles at {date '+%Y-%m-%d %H:%M:%S'}"
+git commit -m "Update Dotfiles at $(date '+%Y-%m-%d %H:%M:%S')"
 git push origin main
 
 echo done!
